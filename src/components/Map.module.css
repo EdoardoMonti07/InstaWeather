@@ -1,0 +1,16 @@
+.mapContainer {
+  position: relative;
+  left: 4vw;
+  right: 0;
+  width: 96vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
