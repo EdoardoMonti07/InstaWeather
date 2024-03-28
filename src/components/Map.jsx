@@ -1,5 +1,5 @@
 import randomLocation from "random-location";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import styles from "./Map.module.css";
 import useUserLocation from "../hooks/useUserLocation";
 import { ThreeDots as Loader } from "react-loader-spinner";
@@ -7,8 +7,6 @@ import { useWeather } from "../contexts/WeatherContext";
 import CustomMarker from "./CustomMarker";
 import Error from "./Error";
 import { useEffect, useRef } from "react";
-import isOnWater from "../helpers/isOnWater";
-import { point } from "leaflet";
 
 function Map() {
   const ZOOM_LEVEL = 8;
