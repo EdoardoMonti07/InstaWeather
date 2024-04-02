@@ -2,7 +2,7 @@
 
 .container {
   background-color: #648cff;
-  background-image: url("./landing-bg.png");
+  background-image: url("/landing-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
