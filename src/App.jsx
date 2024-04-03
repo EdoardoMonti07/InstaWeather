@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/InstaWeather/" element={<Homepage />} />
         <Route path="appLayout" element={<AppLayout />} />
       </Routes>
     </BrowserRouter>
