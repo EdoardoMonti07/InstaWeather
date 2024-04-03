@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <div className={styles.sidebar}>
       <Link to={"/InstaWeather/"}>
-        <img src="./logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" />
       </Link>
     </div>
   );
