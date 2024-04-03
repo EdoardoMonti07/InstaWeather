@@ -4,7 +4,7 @@ import styles from "./Sidebar.module.css";
 function Sidebar() {
   return (
     <div className={styles.sidebar}>
-      <Link to={"/"}>
+      <Link to={"/InstaWeather/"}>
         <img src="logo.png" alt="logo" />
       </Link>
     </div>
