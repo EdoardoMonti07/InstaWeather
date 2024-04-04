@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/InstaWeather/" element={<Homepage />} />
-        <Route path="appLayout" element={<AppLayout />} />
+        <Route path="/InstaWeather/appLayout" element={<AppLayout />} />
       </Routes>
     </BrowserRouter>
   );

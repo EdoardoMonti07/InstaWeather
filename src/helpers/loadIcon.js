@@ -3,7 +3,7 @@ import L from "leaflet";
 function loadIcon(iconName) {
   // Loading weather icons
   const icon = L.icon({
-    iconUrl: `/weather_icons/${iconName}.png`,
+    iconUrl: `/InstaWeather/weather_icons/${iconName}.png`,
     className: "animated-icon",
 
     iconSize: [100, 100], // size of the icon

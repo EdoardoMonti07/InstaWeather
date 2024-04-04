@@ -9,11 +9,11 @@ function DatePicker() {
 
   useEffect(() => {
     const newDates = [];
-    const datesLength = 5;
+    const datesLength = 4;
     for (let i = 0; i < datesLength; i++) {
       const date = new Date();
 
-      date.setDate(date.getDate() + i);
+      date.setDate(date.getDate() + i + 1);
       const formattedDate = `${date.getFullYear()} - ${String(
         date.getMonth() + 1
       ).padStart(2, "0")} - ${String(date.getDate()).padStart(2, "0")}`;

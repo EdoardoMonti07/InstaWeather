@@ -9,7 +9,7 @@ function Homepage() {
         <span className={styles.caption}>
           &quot;Minimal weather insights, instantly&quot;
         </span>
-        <Link to="/appLayout">
+        <Link to="/InstaWeather/appLayout">
           <button className={styles.button}>GO TO THE APP!</button>
         </Link>
       </div>

@@ -21,13 +21,14 @@ function useFetchWeather(coords) {
 
         if (!data.ok) throw new Error("Couldn't load weather data!");
         const weatherData = await data.json();
-
+        console.log(weatherData);
         const selectedWeather = weatherData.list.find(
           (obj) =>
             obj.dt_txt ===
             `${selDate.replace(/\s/g, "")} ${selTime.replace(/\s/g, "")}:00`
         );
-
+        if (!selectedWeather)
+          throw new Error("Invalid input selection! Please try again...");
         setWeather(selectedWeather);
       } catch (error) {
         dispatch({ type: "error/new", payload: error.message });
