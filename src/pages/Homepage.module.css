@@ -4,8 +4,10 @@
   background-color: #648cff;
   background-image: url("/landing-bg.png");
   background-position: bottom;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
 }
 
 .content {
@@ -15,10 +17,10 @@
   display: grid;
   place-items: center;
 }
+
 .title {
   color: white;
   font-size: 5.5rem;
-  display: block;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -28,7 +30,6 @@
 .caption {
   color: white;
   font-size: 2rem;
-  display: block;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -36,11 +37,9 @@
 }
 
 .button {
-  place-self: center;
   background-color: #ffffff;
   border: 0;
   border-radius: 0.5rem;
-  box-sizing: border-box;
   color: #111827;
   font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -70,4 +69,41 @@
 
 .button:focus-visible {
   box-shadow: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .container {
+    background-image: url("/landing-bg-mobile.png");
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .content {
+    position: relative;
+    top: 25vh;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 13vw;
+  }
+
+  .caption {
+    font-size: 5vw;
+  }
+
+  .button {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
