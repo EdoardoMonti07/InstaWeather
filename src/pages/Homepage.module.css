@@ -82,7 +82,7 @@
   .container {
     background-image: url("/landing-bg-mobile.png");
     overflow: hidden;
-    height: 100vh;
+    height: 100dvh;
   }
 
   .content {
